@@ -1,0 +1,55 @@
+{ +block{antiadblockfilters} }
+/deadblocker/.*
+/adblock-alerter/js/adblock_alerter\.js
+/adblock-img\.
+/adblock-notice-
+/adblock-notify-by-bweb/.*
+/adblock-warning-teaser/.*
+/adblock_gate/images/animated\.gif\?
+/adblock_notify\.js
+/adblocker_message_
+/AdblockMessage\.
+/antiadblockmsg\.
+/simple-adblock-notice/.*
+/wp-content/plugins/ad-block-defender/.*
+.bdgest\.com/js/site\.js\?
+.nikopik\.com/wp-content/themes/.*/js/nikopik\.js
+.nrj\.fr/nrj\?Page=/rg\.fake&
+.skyrock\.net/img/.*/adblock/
+.jappy\.tv/i/wrbng/abb\.png
+.animeteatr\.ru/a-detector/
+.fairtop\.in/template/js/fdetect\.js
+{ +filter{antiadblockfilters} }
+*
+{ -block }
+.ausujet\.com/skins/common/ads\.js
+.configspc\.com/templates/ja_purity_ii/css/ads\.css
+.cyberdean\.fr/js/advertisement\.js
+.dbz-fantasy\.com/ads\.css
+.dev-dyod\.fr/styles/ads\.css
+.forums\.macg\.co/js/audentio/funbox/advertisement\.js
+.frandroid\.com/ads\.js
+.fusacq\.com/javascript/ads\.js
+.gameblog\.fr/scripts/adframe\.js
+.gamingroom\.tv/static/img/advert\.png\?
+.grattable\.com/blogads\.css
+.hdnumerique\.com/tpl/jscript/advert\.js
+.item-voyage\.fr/ads\.css
+.jeux-geographiques\.com/js/adblock_detector\.js
+.jeuxvideo-live\.com/js/ads\.js
+.ktu\.sv2\.biz/sv3/advertisement\.js
+.larvf\.com/js/ads\.js
+.macg\.co/js/audentio/funbox/advertisement\.js
+.malekal\.com/js/ads\.js
+.numerama\.com/ads\.js
+.penducado\.com/styles/ads\.css
+.ps3-infos\.fr/adsense/openads/ads/ads\.js
+.ptitchef\.com/js/ads\.js
+.static\.koreus\.com/js/advert\.js
+.trackr\.fr/sites/all/themes/contrib/touch/js/miroirs/adwordstracking\.js
+.universfreebox\.com/js/advertisement\.js
+.uplea\.com/js/advertisement\.js
+.wamiz\.com/css/ads\.css
+.zagaz\.com/img/blogads\.css
+.stol\.it/_ads\.js\?
+{ -block +handle-as-image }

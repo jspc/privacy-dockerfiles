@@ -1,0 +1,52 @@
+confdir /etc/privoxy
+temporary-directory /tmp/
+logdir /var/log/privoxy
+
+actionsfile match-all.action # Actions that are applied to all sites and maybe overruled later on.
+actionsfile default.action   # Main actions file
+actionsfile user.action      # User customizations
+
+filterfile default.filter
+filterfile user.filter      # User customizations
+
+logfile logfile
+debug     1 # Log the destination for each request Privoxy let through. See also debug 1024.
+
+listen-address  0.0.0.0:8118
+
+toggle  1
+enable-remote-toggle  0
+enable-remote-http-toggle  0
+enable-edit-actions 0
+
+enforce-blocks 0
+
+buffer-limit 4096
+
+enable-proxy-authentication-forwarding 0
+#forward-socks5t   /               127.0.0.1:9050 .
+forwarded-connect-retries  0
+
+accept-intercepted-requests 0
+allow-cgi-request-crunching 0
+split-large-forms 0
+keep-alive-timeout 30
+tolerate-pipelining 1
+connection-sharing 1
+socket-timeout 30
+max-client-connections 512
+
+enable-compression 1
+
+
+actionsfile easylist.script.action
+filterfile easylist.script.filter
+
+actionsfile antiadblockfilters.script.action
+filterfile antiadblockfilters.script.filter
+
+actionsfile fanboy-annoyance.script.action
+filterfile fanboy-annoyance.script.filter
+
+actionsfile fanboy-social.script.action
+filterfile fanboy-social.script.filter
