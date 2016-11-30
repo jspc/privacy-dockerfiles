@@ -3,10 +3,16 @@ privacy-dockerfiles
 
 | who       | what |
 |-----------|------|
-| dockerhub | https://hub.docker.com/r/jspc/privacy-dockerfiles/   |
-| circleci  | https://circleci.com/gh/jspc/privacy-dockerfiles   |
+| privoxy dockerhub | https://hub.docker.com/r/jspc/privoxy/     |
+| privoxy, tor dockerhub | https://hub.docker.com/r/jspc/privoxy-tor/ |
 | licence   | MIT   |
 
+
+containers
+--
+
+1.  privoxy - non-caching https proxy
+1.  privoxy-tor - as above, forwarding to a tor SOCKS5 proxy
 
 Licence
 --
@@ -32,4 +38,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
